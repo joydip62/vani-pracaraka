@@ -23,6 +23,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     box-shadow: 0px 8px 17px #00000028;
     background: transparent;
 }
+
 .form-control:focus, textarea:focus, .form-select:focus {
     outline: none;
     -webkit-box-shadow: none;
@@ -31,7 +32,58 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     border: 2px solid #ffffff;
     background: transparent;
 }
+.form-check-input:checked {
+    background-color: transparent;
+    border-color: none;
+}
+form .form-check-input:checked[type=checkbox]{
+    background-image: url("../img/Checkbox.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 0px 3px 6px #00000028;
+    opacity: 1;
+  }
+  form .form-check-input selected{
+    background-image: url("../img/Checkbox.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 0px 3px 6px #00000028;
+    opacity: 1;
+  }
+  
+  form .form-check-input {
+    background-image: url("../img/checkboxdeselect.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 0px 3px 6px #00000028;
+    background-color: transparent;
+    border: none;
+  }
+  
+  form .radio .form-check input:checked[type=radio] {
+    background-image: url("../img/radio-button.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 0px 15px 15px #00000026;
+    opacity: 1;
+    /* border: 3px solid #ffffff; */
 
+  }
+  form .radio .form-check-input{
+    background-image: url("../img/radio-button-deselected.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 0px 3px 6px #00000026;
+    opacity: 1;
+    /* background: transparent; */
+  }
+
+  
 body{
     background: url(../img/bg@2x.png);
     background-attachment: fixed;
@@ -108,10 +160,10 @@ body{
     border: none;
     font-weight: 600;
     margin: 30px auto 0;
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: center;
-    padding: 20px 30px ;
+    padding: 20px 0;
     font-size: 26px;
 }
 #other-lan{
@@ -119,4 +171,8 @@ body{
 }
 .otherAddress{
     display: none;
+}
+.radio .form-check{
+    display: inline-block;
+    margin-right: 20px;
 }
