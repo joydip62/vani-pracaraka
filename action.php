@@ -23,7 +23,12 @@
         ]);
         // Send a request
         $result = file_get_contents($url, false, $options);
-        print_r($result);
+        // print_r($result);
+        if ($result) {
+            header("location:thankyou.html");
+          }else{
+            echo "Someting Error";
+          }
     }
 
 ?>

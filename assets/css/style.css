@@ -172,3 +172,7 @@ body{
     display: inline-block;
     margin-right: 20px;
 }
+
+.thankyou .header-section{
+    height: 100vh;
+}
