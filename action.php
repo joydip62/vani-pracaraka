@@ -3,7 +3,7 @@
 
         $legalName = $_POST['legalName'];
         $phone = $_POST['mobileNo'];
-        $message = `Hare Krishna $legalName ! Thank you for your donation`;
+        $message = 'Hello' . $legalName .'! Thank you for your donation';
 
         $data = [
             'phone' => $phone, // Receivers phone
